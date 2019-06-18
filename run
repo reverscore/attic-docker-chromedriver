@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker run --rm -d --init --name=chromedriver \
+    -e EXPOSE_X11=true \
+    -e ENABLE_VNC=true \
+    -p 5900:5900 \
+    -p 9515:9515 \
+    -p 6000:6000 \
+    -p 4444:4444 \
+    rever/chromedriver
+
