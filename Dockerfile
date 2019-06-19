@@ -80,4 +80,5 @@ EXPOSE 6000
 EXPOSE 5900
 
 ENTRYPOINT ["entrypoint", "chromedriver"]
-CMD ["--port=4444", "--whitelisted-ips="]
+CMD ["--port=9515", "--whitelisted-ips"]
+
